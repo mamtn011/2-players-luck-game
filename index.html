@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luck Game</title>
+    <style>
+      form {
+        display: inline;
+      }
+      .container {
+        width: 90%;
+        margin: auto;
+        padding: 20px 5px 20px 50px;
+        background-color: #497345;
+      }
+      .tossMsg,
+      .valid {
+        color: yellow;
+      }
+      .ws {
+        font-weight: bolder;
+        font-size: 20px;
+      }
+      .winer {
+        color: #23ee10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's Play a Luck Game</h1>
+      <p class="tossMsg">Toss before start playing</p>
+      <button id="toss">Toss</button>
+      <h3>
+        Player 1:
+        <span id="p1score">0</span>
+        <span class="winer"></span>
+        <br />
+        Player 2:<span id="p2score">0</span>
+        <span class="winer"></span>
+      </h3>
+      <p class="ws">Wining Score is: <span></span></p>
+      <form action="">
+        <input type="number" id="tScore" />
+        <button id="submit">Submit</button>
+      </form>
+      <button id="reset">Reset</button> <br />
+      <p class="valid"></p>
+      <button id="p1btn" class="player">Player 1</button>
+      <button id="p2btn" class="player">Player 2</button>
+    </div>
+    <script src="project-1.js"></script>
+  </body>
+</html>
